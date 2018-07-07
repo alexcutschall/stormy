@@ -15,6 +15,21 @@ public class CurrentWeather {
     private String summary;
     private String timezone;
 
+    public CurrentWeather() {
+    }
+
+    public CurrentWeather(String location, String icon, long time, double temperature,
+                          double humidity, double precipChance, String summary, String timezone) {
+        this.location = location;
+        this.icon = icon;
+        this.time = time;
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.precipChance = precipChance;
+        this.summary = summary;
+        this.timezone = timezone;
+    }
+
     public String getTimezone() {
         return timezone;
     }
@@ -38,6 +53,7 @@ public class CurrentWeather {
     public void setIcon(String icon) {
         this.icon = icon;
     }
+
 
     public int getIconId() {
         //clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night
@@ -74,6 +90,7 @@ public class CurrentWeather {
             case "partly-cloudy-night"  :
                 iconId = R.drawable.cloudy_night;
                 break;
+
         }
         return iconId;
     }
