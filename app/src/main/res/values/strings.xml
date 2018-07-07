@@ -6,7 +6,7 @@
     <string name="network_unavailable_message">Sorry, Network is Unavailable</string>
     <string name="dark_sky_message"><a href="https://darksky.net/poweredby">Powered by Dark Sky</a></string>
     <string name="stormy_with_a_chance_of_meatballs">Stormy with a chance of Meatballs</string>
-    <string name="location_name">Alcatraz Island, CA</string>
+    <string name="location_name">Denver, CO</string>
     <string name="humidityName">HUMIDITY</string>
     <string name="precipChanceText">RAIN/SNOW?</string>
 </resources>

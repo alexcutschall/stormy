@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
     private CurrentWeather currentWeather;
     private ImageView iconImageView;
-    final double latitude = 37.8267;
-    final double longitude = -122.4233;
+    final double latitude = 39.742043;
+    final double longitude = -104.991531;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 public void onFailure(Call call, IOException e) {
 
                 }
-
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     try {
@@ -151,6 +150,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void refreshOnClick(View view) {
         Toast.makeText(this, "Refreshing data", Toast.LENGTH_LONG).show();
-        getForecast(longitude, latitude);
+        getForecast(latitude, longitude);
     }
 }
